@@ -8,7 +8,7 @@ const Pokedex = () => {
 		<div className="lg:grid lg:grid-cols-2 lg:gap-2">
 			<div className="">
 				<div className="lg:w-full lg:h-full">
-					<div className="flex bg-red-500 rounded-xl mb-2 lg:w-full lg:h-auto lg:flex-col lg:items-center lg:text-center">
+					<div className="flex bg-green-300 rounded-xl mb-2 lg:w-full lg:h-auto lg:flex-col lg:items-center lg:text-center">
 						<img
 							src={ubication.props.info.sprites.front_default}
 							alt={ubication.props.info.name}
@@ -69,7 +69,7 @@ const Pokedex = () => {
 									{ubication.props.info.abilities.map((skill, index) => (
 										<span
 											key={index}
-											className="bg-pink-800 py-1 px-2 rounded mx-2 text-white capitalize mb-2"
+											className="bg-red-600 py-1 px-2 rounded mx-2 text-white capitalize mb-2"
 										>
 											{skill.ability.name}
 										</span>
@@ -80,14 +80,14 @@ const Pokedex = () => {
 					</div>
 				</div>
 			</div>
-			<div className="flex flex-col bg-gray-400 p-5 rounded-xl lg:w-full">
+			<div className="flex flex-col bg-indigo-400 p-5 rounded-xl lg:w-full">
 				<p className="font-bold text-center mb-4">Moves</p>
 				<div className="grid grid-cols-3 gap-2 md:grid-cols-4 lg:grid-cols-5">
 					{ubication.props.info.moves.length > 0 ? (
 						ubication.props.info.moves.map((move, index) => (
 							<span
 								key={index}
-								className="capitalize text-white bg-green-400 rounded-lg text-center p-1"
+								className="capitalize text-white bg-red-400 rounded-lg text-center p-1"
 							>
 								{move.move.name}
 							</span>

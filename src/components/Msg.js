@@ -8,7 +8,7 @@ const Msg = () => {
 		<>
 			{user.user ? (
 				<span className="text-red-600 font-bold p-2 capitalize">
-					Welcome Back, Pokemon Trainer {user.name}
+					Welcome Back {user.name}
 				</span>
 			) : null}
 		</>

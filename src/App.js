@@ -20,7 +20,7 @@ function App() {
 
 	return (
 		<Router>
-			<div className="App p-6 font-oswald">
+			<div className="App p-6 font-sans">
 				<div className="flex justify-between items-center mb-2">
 					<Msg />
 					<Logout />

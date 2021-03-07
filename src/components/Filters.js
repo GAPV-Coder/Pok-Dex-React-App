@@ -38,7 +38,9 @@ const Filters = () => {
 
 	return (
 		<>
-			<h1 className="text-4xl font-bold mb-3 text-center uppercase">Pokedex</h1>
+			<h1 className="text-4xl font-bold mb-3 text-center text-red-600 uppercase">
+				Pokédex
+			</h1>
 			<p className="text-gray-600 mb-4 text-center">
 				Seach for Pokemons by name or Filter them by type.
 			</p>
@@ -50,7 +52,7 @@ const Filters = () => {
 					name="byName"
 					ref={register}
 					placeholder="What Pokemon are you looking for?"
-					className="bg-gray-100 p-3 rounded-lg w-3/4 text-center sm:w-7/12 md:w-2/5 lg:w-1/3"
+					className="bg-gray-200 p-3 rounded-lg w-3/4 text-center sm:w-7/12 md:w-2/5 lg:w-1/3"
 				/>
 				<button className="w-12">
 					<div className="flex justify-center">
@@ -80,7 +82,7 @@ const Filters = () => {
 				<select
 					name="byType"
 					ref={register}
-					className="bg-gray-100 p-3 rounded-md w-3/4 text-center capitalize sm:w-7/12 md:w-2/5 lg:w-1/3"
+					className="bg-gray-200 p-3 rounded-md w-3/4 text-center capitalize sm:w-7/12 md:w-2/5 lg:w-1/3"
 				>
 					<option value="">--Select A Type--</option>
 					{allTypes &&

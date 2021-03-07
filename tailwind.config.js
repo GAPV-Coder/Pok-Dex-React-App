@@ -86,7 +86,6 @@ module.exports = {
 			"gradient-to-l": "linear-gradient(to left, var(--tw-gradient-stops))",
 			"gradient-to-tl":
 				"linear-gradient(to top left, var(--tw-gradient-stops))",
-			"hero-pattern": "url('/images/Team_Rocket.png')",
 		},
 		backgroundOpacity: (theme) => theme("opacity"),
 		backgroundPosition: {
